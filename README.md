@@ -1,9 +1,6 @@
 
 <h1 align="center" >Mural para Datas , projetos e etc<h1>
 <h2 align="center">Projeto criado para estudo de Api Rest e Backend em geral . </h2>
-<h2 color="blue" align="center">
-<a href="https://vitorhrd.github.io/Mural/">🔗 Mural</a>
-</h2>
 <h1>🚀 Features</h1>
 <ul>
     <li> Cria os posts do mural ao apertar o botão salvar 

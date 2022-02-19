@@ -7,7 +7,7 @@ const { use } = require("express/lib/application");
 
 
 
-router.use(cors())
+
 
 router.get("/all",(req,res)=>{
 
