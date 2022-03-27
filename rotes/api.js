@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const  posts = require('../model/posts');
 const cors = require('cors');
-const { use } = require("express/lib/application");
 
 
 
