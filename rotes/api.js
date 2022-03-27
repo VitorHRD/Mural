@@ -7,7 +7,7 @@ const cors = require('cors');
 
 
 
-
+router.use(cors())
 router.get("/all",(req,res)=>{
 
     res.json(JSON.stringify(posts.getAll()))
