@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     updadePosts();
 })
 function updadePosts(){
- fetch("http://localhost:3000/api/all").then(res=>{
+ fetch("https://mural-node.herokuapp.com/api/all").then(res=>{
           return res.json()
     }).then(json=>{
         let postElements = ""
@@ -42,7 +42,7 @@ function newPost(){
                      headers: new Headers({'content-type':'application/json'}),
                      body:JSON.stringify(post)}
                      if(title && description != "" ){
-      fetch("http://localhost:3000/api/new",options).then(res=>{
+      fetch("https://mural-node.herokuapp.com/api/new",options).then(res=>{
 
           updadePosts();
       })
@@ -56,7 +56,7 @@ function deleteCard(event) {
     const options ={method:"Delete",
     headers: new Headers({'content-type':'application/json'}),
     body:JSON.stringify(id)}
-fetch("http://localhost:3000/api/delete",options).then(res=>{
+fetch("https://mural-node.herokuapp.com/api/delete",options).then(res=>{
 
 updadePosts();
 })
